@@ -1,0 +1,39 @@
+﻿<div class="col-sm-4" style="background-color:rgb(114, 156 , 210);">
+            <h1>__________View An Image__________</h1>
+            <center>
+            <table class="table info-table-bordered">
+                <thead class="thead-info">
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <h2 id="image-post-title-text"> {{currentPost.title}}</h2>
+                    </tr>
+                    <tr>
+                        <div id="image-post-author" class="info-tags" >Author: {{currentPost.username}}</div>
+                    </tr>
+                    <tr>
+                        <div id="image-post-date" class="info-tags">Date Posted: {{currentPost.created}}</div>
+                    </tr>
+                    <tr>
+                        <div id="image-post-desc" class="info-tags">Description: {{currentPost.description}}</div>
+                    </tr>
+                    
+                    <tr>
+                        
+                        <tr>
+                            <br><br />
+                            <img id="image-post-image" src="/{{currentPost.photopath}}">
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+                </center>
+                <center>
+                        <form>
+ <input type="button" value="Return Home"; onclick="history.back()"><br><br>
+</form>
+</center>
+        </div>

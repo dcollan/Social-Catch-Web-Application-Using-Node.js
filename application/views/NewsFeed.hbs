@@ -1,0 +1,49 @@
+<h1 style="color:rgb(255, 208, 0);font-size:30px;">Social Catch</h1>
+<p style="color:rgb(255, 208, 0);font-size:30px;">Your Images</p>
+
+<form id = "search-image" class="form-grid-searchimage" action="NewsFeed" method="GET" enctype = "multipart/form-data">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <input id="search-text" name="search-text" type="text" placeholder="Search for a photo">
+  <button id="search-button" class="fa fa-search nav-items" type="submit"></button> 
+  </form>
+
+
+<div id = "main-content">
+  {{#each results}}
+    {{> card this}}
+    {{/each}}
+</div>
+
+
+<center>
+<p style="color:rgb(255, 208, 0);font-size:30px;">Sample Images</p>
+<div class="gallery">
+  <a target="_blank" href="Beach">
+    <img src="https://images2.alphacoders.com/468/4682.jpg"  alt="Beach" width="300" height="200">
+  </a>
+    <a target="_blank" href="Forest">
+      <img src="https://images7.alphacoders.com/329/329647.jpg" alt="Forest" width="300" height="200">
+      </a>
+  <blockquote>
+    <blockquote>
+  <div style="color:rgb(255, 208, 0);font-size:15px;" class="desc"> Day at the beach!             A spectacular view!</div>
+  </blockquote>
+  </blockquote>
+</div>
+<div class="gallery">
+  <a target="_blank" href="City">
+    <img src="https://images8.alphacoders.com/368/368165.jpg" alt="City" width="300" height="200">
+  </a>
+    <a target="_blank" href="Autumn">
+      <img src="https://images6.alphacoders.com/338/338596.jpg" alt="Autumn" width="300" height="200">
+      </a>
+  <blockquote>
+    <blockquote>
+  <div style="color:rgb(255, 208, 0);font-size:15px;" class="desc"> Lovely City Lights             Autumn Beauty</div>
+  </blockquote>
+  </blockquote>
+</div>
+<br>
+ <button type="button" onclick="location.href='/postimage' ">Upload an Image</button>
+ <button type="button" onclick="location.href='/' ">Logout</button>
+ </center>

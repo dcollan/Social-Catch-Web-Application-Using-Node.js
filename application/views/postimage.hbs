@@ -1,0 +1,36 @@
+﻿<div class="col-sm-4" style="background-color:rgb(114, 156, 210);">
+        <h1>_____Social Catch - Share an Image!_____</h1>
+<form id = "post-image" class="form-grid-postimage" action="posts/createPost" method="POST" enctype = "multipart/form-data">
+            <div class="form-group">
+                <center>
+                <input type="text" class="form-control" id="title" placeholder="Enter Photo Title" name="title" required> <br>
+                <br />
+                <input type="text" class="form-control" id="description" placeholder="Enter Photo Description" name="description" required>
+                </center>
+                <center>
+                <br><label>------------> Select Image</label>
+                <input type="file" class="form-control" id="uploadPhoto" name="uploadPhoto" required>
+                    </center>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <center>
+                    <label><input type="checkbox" name="rule" required>I accept the Acceptable Use Policy</label>
+                        </center>
+                </div>
+                <br>
+                <center>
+                     <input id="button" type="submit" value="Upload">
+                     </center>
+                     <br>
+                   <center>
+                    <input type="button" value="Go Back"; onclick="history.back()">
+                    </center>
+            </div>
+        </form>
+        <center>
+        <p style="color:rgb(255, 208, 0);font-size:15px;">N̲o̲t̲e̲: For new accounts made in this website, posting an</p>
+        <p style="color:rgb(255, 208, 0);font-size:15px;">image first is always required to access the News Feed</p>
+         <p style="color:rgb(255, 208, 0);font-size:15px;">to prevent a web crash if no uploaded images are found.</p><br>
+         </center>
+    </div>
